@@ -1,4 +1,5 @@
 from copy import copy
+from math import comb
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -52,8 +53,6 @@ class AttackingUnit:
         return dist
 
     def damage_dist(self):
-        from math import comb
-
         if self.critical_hit > 0:
             crit_prob = 1/6
         else:
